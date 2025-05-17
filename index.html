@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300&family=Raleway:wght@100;200&family=Pinyon+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
   <style>
     body {
-      font-family: 'Playfair Display SC', serif;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 200;
       letter-spacing: 0.1em;
       text-align: center;
       background-image: url('background.png');
@@ -16,12 +17,26 @@
       background-position: center;
       background-attachment: fixed;
       color: #333;
-      padding: 20px;
+      padding: 0;
       line-height: 1.6;
       margin: 0;
       min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-
+    /* Add this new style for the credit */
+    .credit {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      font-size: 0.8rem;
+      color: white;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 200;
+      text-transform: none;
+      letter-spacing: 1px;
+    }
     .container {
       max-width: 500px;
       margin: 0 auto;
@@ -30,30 +45,15 @@
       border-radius: 10px;
       box-shadow: 0 5px 25px rgba(0,0,0,0.05);
     }
-
     .logo-img {
       width: 200px;
-      height: auto; /* Maintain aspect ratio */
+      height: auto;
       max-height: 200px;
       object-fit: contain;
-      margin: 0 auto 20px;
+      margin: 0 auto 30px;
       display: block;
-      transform: none !important; /* Prevents inherited stretching */
+      transform: none !important;
     }
-
-    h1 {
-      line-height: 0.8;
-      font-weight: 900;
-      font-size: 2.2rem;
-      letter-spacing: 0.05em;
-      margin: 10px 0;
-      text-transform: uppercase;
-      color: #222;
-      display: inline-block;
-      transform: scaleX(0.85) scaleY(1.2);
-      transform-origin: left;
-    }
-
     .tagline {
       font-weight: 800;
       font-size: 1.1rem;
@@ -61,12 +61,10 @@
       margin-bottom: 30px;
       color: #555;
     }
-
     a, a:visited, a:active {
       color: #000;
       text-decoration: none;
     }
-
     a {
       display: flex;
       align-items: center;
@@ -80,28 +78,30 @@
       color: #000;
       text-decoration: none;
       border-radius: 8px;
-      font-weight: 800;
-      font-size: 1rem;
+      font-weight: 200;
+      font-size: 1.1rem;
       transition: all 0.3s;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
+      letter-spacing: 3px;
+      font-family: 'Jost', sans-serif;
+      transform: none;
     }
-
     a:hover {
       background-color: #e3d9cf;
       transform: translateY(-2px);
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      letter-spacing: 3.5px;
     }
-
     @media (max-width: 600px) {
       .container {
         padding: 25px 20px;
+        width: 85%;
       }
       .logo-img {
         width: 180px;
       }
-      h1 {
-        font-size: 1.8rem;
+      .credit {
+        font-size: 0.7rem; /* Slightly smaller on mobile */
       }
     }
   </style>
@@ -112,8 +112,6 @@
          alt="WELAF FLOWERS Logo" 
          class="logo-img">
     
-    <h1>WELAF FLOWERS</h1>
-
     <a href="https://www.tiktok.com/@welaf.flowers" target="_blank">
       <i class="fab fa-tiktok"></i> TikTok
     </a>
@@ -124,5 +122,7 @@
       <i class="fab fa-whatsapp"></i> WhatsApp
     </a>
   </div>
+  <!-- Add this line right before </body> -->
+  <div class="credit">made with ♡</div>
 </body>
 </html>
