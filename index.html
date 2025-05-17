@@ -3,47 +3,107 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welaf Flowers</title>
+  <title>WCLAF FLOWERS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
-      font-family: sans-serif;
+      font-family: 'Montserrat', sans-serif;
       text-align: center;
-      background-color: #fff5f7;
+      background-color: #f8f8f8;
       color: #333;
-      padding: 40px;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+    }
+    .logo-img {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+      margin: 0 auto 20px;
+      display: block;
     }
     h1 {
-      margin-bottom: 10px;
+      font-weight: 900;
+      font-size: 2.2rem;
+      letter-spacing: -1px;
+      margin: 10px 0;
+      text-transform: uppercase;
+      color: #222;
     }
-    p {
+    .tagline {
+      font-weight: 800;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
       margin-bottom: 30px;
+      color: #555;
     }
     a {
-      display: block;
-      margin: 10px auto;
-      padding: 15px 25px;
-      width: 80%;
-      max-width: 300px;
-      background-color: #ffb6c1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin: 18px auto;
+      padding: 16px 25px;
+      width: 85%;
+      max-width: 280px;
+      background-color: #000;
       color: white;
       text-decoration: none;
       border-radius: 8px;
-      font-weight: bold;
-      transition: background 0.3s;
+      font-weight: 800;
+      font-size: 1rem;
+      transition: all 0.3s;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
     a:hover {
-      background-color: #ff4d6d;
+      background-color: #333;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 25px 20px;
+      }
+      .logo-img {
+        width: 160px;
+        height: 160px;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>🌸 Welaf Flowers</h1>
-  <p>Find us on your favorite platforms:</p>
+  <div class="container">
+    <img src="aaa3f71078df3b7d3af1387aa5eae3fc~tplv-tiktokx-cropcenter_1080_1080.jpeg" 
+         alt="WCLAF FLOWERS Logo" 
+         class="logo-img">
+    
+    <h1>WCLAF FLOWERS</h1>
+    <p class="tagline">Floral Design Studio</p>
 
-  <a href="https://www.tiktok.com/@welaf" target="_blank">TikTok</a>
-  <a href="https://www.instagram.com/welaf" target="_blank">Instagram</a>
-  <a href="https://wa.me/1234567890" target="_blank">WhatsApp</a>
-  <a href="mailto:welaf@example.com">Email Us</a>
-
+    <a href="https://www.tiktok.com/@welaf" target="_blank">
+      <i class="fab fa-tiktok"></i> TikTok
+    </a>
+    <a href="https://www.instagram.com/welaf" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a href="https://wa.me/YOURNUMBER" target="_blank">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+    <a href="mailto:your@email.com">
+      <i class="fas fa-envelope"></i> Email
+    </a>
+  </div>
 </body>
 </html>
